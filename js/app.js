@@ -1,4 +1,4 @@
-document.querySelectorAll("a").forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
   anchor.addEventListener("click", function(e){
   
