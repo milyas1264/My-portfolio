@@ -13,3 +13,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
   
   });
+ // Animate skill bars
+  const bars = document.querySelectorAll(".progress-bar");
+
+function animateSkills(){
+
+bars.forEach(function(bar){
+
+const width = bar.getAttribute("style").replace("width:", "").trim();
+
+bar.style.width = "0";
+
+setTimeout(() => {
+bar.style.width = width;
+}, 200);
+
+});
+
+}
+
+window.addEventListener("load", animateSkills);
