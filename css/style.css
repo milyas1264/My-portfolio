@@ -24,7 +24,9 @@ body{
   text-decoration:none;
   }
   a:hover{
-  text-decoration:underline;
+  border: 1px dotted palevioletred;
+  padding: 5px;
+  font-size: 20px;
   color: aqua;
   }
   
