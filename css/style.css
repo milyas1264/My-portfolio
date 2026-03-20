@@ -41,6 +41,23 @@ body{
   margin:10px;
   padding:15px;
   }
+  .Certificates{
+  border:1px solid #ccc;
+  margin:10px;
+  padding:15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+  .cerficate-link{
+    display:inline-block;
+    margin:5px;
+    padding:5px 10px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    }
 
   .projects-container{
     display:flex;
@@ -157,4 +174,9 @@ body{
                 height:auto;
                 }
                
+              }
+
+              img{
+                width: 400px;;
+                height:auto;
               }
