@@ -130,6 +130,8 @@ body{
       /* Projects Responsive Design */
       @media (max-width: 768px){
         .projects-container{
+          display: flex;
+          flex-wrap: wrap;
         flex-direction:column;
         align-items:center;
         }
@@ -183,6 +185,11 @@ body{
               img{
                 width: 400px;;
                 height:auto;
+              }
+
+              img:hover{
+                transform: scale(1.5);
+                transition: transform 0.5s  ease-in-out;
               }
 
               section{

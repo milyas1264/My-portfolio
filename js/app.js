@@ -55,3 +55,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+//click on img to enlarge
+function toggleImageSize() {
+  const img = document.querySelectorAll(".Certificates");
+  img.forEach(function(image) {
+    if (image.style.width === "400px") {
+      image.style.width = "1200px";
+    } else {
+      image.style.width = "400px";
+    }
+  });
+}
