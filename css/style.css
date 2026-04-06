@@ -7,10 +7,14 @@ body{
   nav{
   display:flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content:space-around;
   padding:15px;
   background:rgb(11, 82, 236);
   color:white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid rgb(17, 156, 221);
   }
   
   nav ul{
@@ -25,10 +29,10 @@ body{
   text-decoration:none;
   }
   a:hover{
-  border: 1px dotted palevioletred;
+  border: 1px outset greenyellow;
+  border-radius: 5px;
   padding: 5px;
-  font-size: 20px;
-  color: aqua;
+  
   }
   
   section{
@@ -231,4 +235,20 @@ body{
                   color:white;
                   font-size:30px;
                   cursor:pointer;
+                  }
+
+                  #my-imge{
+                    width: 70px;
+                    height: 70px;
+                    background-image: url('./images/my-image.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    border: 2px solid gold;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                  }
+                  #me{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
                   }
