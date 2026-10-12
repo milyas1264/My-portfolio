@@ -1,254 +1,242 @@
-body{
+body {
   font-family: Arial;
-  margin:0;
-  padding:0;
-  }
-  
-  nav{
-  display:flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
   align-items: center;
-  justify-content:space-around;
-  padding:15px;
-  background:rgb(11, 82, 236);
-  color:white;
+  justify-content: space-around;
+  padding: 15px;
+  background: rgb(11, 82, 236);
+  color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 3px solid rgb(17, 156, 221);
-  }
-  
-  nav ul{
-  display:flex;
+}
+
+nav ul {
+  display: flex;
   justify-content: space-around;
-  list-style:none;
-  gap:20px;
-  }
-  
-  nav a{
-  color:white;
-  text-decoration:none;
-  }
-  a:hover{
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
   border: 1px outset greenyellow;
   border-radius: 5px;
   padding: 5px;
-  
-  }
-  
-  section{
-  padding:50px;
-  text-align:center;
-  }
-  
-  #home{
-  background:#f5f5f5;
-  }
-  
-  .projects{
-  border:1px solid #ccc;
-  margin:10px;
-  padding:15px;
-  
-  }
-  .Certificates{
-  border:1px solid #ccc;
-  margin:10px;
-  padding:15px;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#home {
+  background: #f5f5f5;
+}
+
+.projects {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+}
+.Certificates {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.cerficate-link {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background: rgb(64, 95, 172);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  border: 2px ridge gold;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.skill {
+  margin: 20px auto;
+  width: 60%;
+  text-align: left;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #007bff;
+  width: 0;
+  transition: width 1s ease-in;
+}
+
+/* Navbar Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
   }
-  .cerficate-link{
-    display:inline-block;
-    margin:5px;
-    padding:5px 10px;
-    background:rgb(64, 95, 172);
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    }
 
-  .projects-container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    }
-    
-    .project-card{
-    border:2px ridge gold;
-    padding:20px;
-    width:250px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
-    }
-    
-    .project-card:hover{
-    transform:translateY(-5px);
-    }
-    
-    .project-card a{
-    display:inline-block;
-    margin:5px;
-    padding:5px 10px;
-    background:black;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
-    .skill{
-      margin:20px auto;
-      width:60%;
-      text-align:left;
-      }
-      
-      .progress{
-      background:#ddd;
-      border-radius:10px;
-      overflow:hidden;
-      }
-      
-      .progress-bar{
-      height:10px;
-      background:#007bff;
-      width:0;
-      transition:width 1s ease-in;
-      }
+/* Projects Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* Navbar Responsive Design */
-    @media (max-width: 768px){
+  .project-card {
+    width: 90%;
+  }
+}
 
-      nav{
-      flex-direction:column;
-      align-items:center;
-      }
-      
-      nav ul{
-      flex-direction:column;
-      gap:10px;
-      }
-      
-      }
+/* Skills Responsive Design */
+@media (max-width: 768px) {
+  .skill {
+    width: 90%;
+  }
+}
 
-      /* Projects Responsive Design */
-      @media (max-width: 768px){
-        .projects-container{
-          display: flex;
-          flex-wrap: wrap;
-        flex-direction:column;
-        align-items:center;
-        }
-        
-        .project-card{
-        width:90%;
-        }
-        
-        }
+/* Section Padding Fix */
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+}
 
-        /* Skills Responsive Design */
-        @media (max-width: 768px){
+/* text size improve */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
 
-          .skill{
-          width:90%;
-          }
-          
-          }
+  h2 {
+    font-size: 20px;
+  }
+}
 
-          /* Section Padding Fix */
-          @media (max-width: 768px){
+/*images responsive*/
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
-            section{
-            padding:30px 15px;
-            }
-            
-            }
+img {
+  width: 400px;
+  height: auto;
+}
 
-            /* text size improve */
-            @media (max-width: 768px){
+img:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease-in-out;
+}
 
-              h1{
-              font-size:24px;
-              }
-              
-              h2{
-              font-size:20px;
-              }
-              
-              }
+section {
+  border: #ccc solid 1px;
+  margin: 20px 50px;
+  border-radius: 10px;
+}
 
-              /*images responsive*/
-              @media (max-width: 768px){
-                img{
-                max-width:100%;
-                height:auto;
-                }
-               
-              }
+/* dark mode */
+body.dark {
+  background: #121212;
+  color: white;
+}
 
-              img{
-                width: 400px;;
-                height:auto;
-              }
+body.dark nav {
+  background: #1f1f1f;
+}
 
-              img:hover{
-                transform: scale(1.5);
-                transition: transform 0.5s  ease-in-out;
-              }
+body.dark #home {
+  background: #1e1e1e;
+}
+body.dark .project-card {
+  background: #1e1e1e;
+  color: white;
+}
 
-              section{
-                border: #ccc solid 1px;
-                margin:20px 50px;
-                border-radius: 10px;
-              }
+body.dark .progress {
+  background: #333;
+}
 
-              /* dark mode */
-              body.dark{
-                background:#121212;
-                color:white;
-                }
-                
-                body.dark nav{
-                background:#1f1f1f;
-                }
-                
-                body.dark #home{
-                background:#1e1e1e;
-                }
-                body.dark .project-card{
-                background:#1e1e1e;
-                color:white;
-                }
-                
-                body.dark .progress{
-                background:#333;
-                }
-                
-                body.dark a{
-                color:#4da6ff;
-                }
+body.dark a {
+  color: #4da6ff;
+}
 
-                #theme-toggle{
-                  background:none;
-                  border:none;
-                  color:white;
-                  font-size:30px;
-                  cursor:pointer;
-                  }
+#theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
 
-                  #my-imge{
-                    width: 70px;
-                    height: 70px;
-                    background-image: url('./images/my-image.jpg');
-                    background-size: cover;
-                    background-position: center;
-                    border: 2px solid gold;
-                    border-radius: 50%;
-                    margin-right: 10px;
-                  }
-                  #me{
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                  }
+#my-imge {
+  width: 70px;
+  height: 70px;
+  background-image: url("./images/M Ilyas.png");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid gold;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#me {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
